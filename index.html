@@ -7,10 +7,36 @@
 		<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-		
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+						<span class="sr-only">Toogle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">TopCasaFina Arquitetura</a>
+				</div>
+				<div class="collapse navbar-collapse" id="collapse-navbar">
+					<ul class="nav navbar-nav">
+						<li><a href="#sobre-nos">Sobre Nós</a></li>
+						<li><a href="#nossos-projetos">Nossos Projetos</a></li>
+						<li><a href="#depoimentos">Depoimentos</a></li>
+						<li><a href="#videos">Vídeo</a></li>
+						<li><a href="#contato">Contato</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
 	<section class="container">
-		<h2>Sobre Nós</h2>
-		<img class="img-responsive" src="img/empresa.jpg" alt="">
+        <section id="sobre-nos" class="container">
+            <h2>Sobre Nós</h2>
+            <img class="img-responsive" src="img/empresa.jpg" alt="">
+        </section>
 
 		<div class="panel-group" id="paineis-sobre">
 			<div class="panel panel-default">
@@ -59,7 +85,7 @@
 		</div>
 	</div>
 
-	<section class="container">
+	<section class="container" id="nossos-projetos">
 		<h2>Nossos Projetos</h2>
 
 		<figure class="thumbnail">
@@ -113,7 +139,7 @@
 		</figure>
 	</section>
 
-	<section>
+	<section class="container" id="depoimentos">
 
 		<h2 class="container titulo-depoimentos">Depoimentos de Clientes</h2>
 
@@ -161,14 +187,14 @@
 		</div>
 	</section>
 
-	<section class="container">
+	<section class="container" id="videos">
 		<h2>Video institucional</h2>
 		<div class="embed-responsive embed-responsive-16by9">
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/i_3Pv1AygeI" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</section>
 
-	<section class="container">
+	<section class="container" id="contato">
 		<h2>Contato</h2>
 		<h4>Entre em contato conosco</h4>
 
@@ -224,7 +250,7 @@
             Email: contato.topcasafina@alura.com.br
         </address>
 
-        <script src="jquery.js"></script>
+        <script src="jquery-1.12.2.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
     </footer>
 </body>
